@@ -2,7 +2,7 @@
 FROM ubuntu:latest
 
 RUN apt update
-RUN apt install python3
+RUN apt install python3 -y
 RUN which python3
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
