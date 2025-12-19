@@ -33,11 +33,13 @@ jobs:
       - name: Compile xml document
         run: |
           latexml --dest=doc.xml article
+          latexmlpost doc --dest=docs/index.html --linelength=20 --splitat=subsection
+
 
       - name: Commit xml
         run: |
-          git config --global user.name 'Your Name'
+          git config --global user.name 'Pages Pusher'
           git config --global user.email 'your-username@users.noreply.github.com'
-          git add doc.xml
+          git add docs/index.html
           git commit -m "Automated report"
           git push
