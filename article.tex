@@ -1,9 +1,5 @@
-% This is a simple sample document.  For more complicated documents take a look in the exercise tab. Note that everything that comes after a % symbol is treated as comment and ignored when the code is compiled.
-
-\documentclass{article} % \documentclass{} is the first command in any LaTeX code.  It is used to define what kind of document you are creating such as an article or a book, and begins the document preamble
-
-\usepackage{amsmath} % \usepackage is a command that allows you to add functionality to your LaTeX code
-
+\documentclass{article}
+\usepackage{amsmath}
 \IfFileExists{latexml.sty}{
   \usepackage{latexml}
 }{
@@ -12,19 +8,18 @@
 
 
 \title{\textit{STOCHASTISCHE} RECHENÜBUNGEN} % Sets article title
-%\author{My Name} % Sets authors name
-%\date{\today} % Sets date for date compiled
 
-% The preamble ends with the command \begin{document}
-\begin{document} % All begin commands must be paired with an end command somewhere
-    
+
+\begin{document}
+
     \maketitle % creates title using information in preamble (title, author, date)
     \textit{Eine Sammlung von Aufgaben zu grundlegenden Konzepten der Stochastik.}
     
     \section*{Endliche Wahrscheinlichkeitsräume} % creates a section
     
     
-    Hier könnte ein kleiner Wiederholungstext mit Definitionen und den wichtigsten Sätzen stehen...
+    Hier könnte ein kleiner Wiederholungstext mit Definitionen und den wichtigsten Sätzen stehen.
+    Das ist hier ein Test.
     Today I am learning \LaTeX.
     \LaTeX{} is a great program for writing math. I can write in line math such as $a^2+b^2=c^2$ %$ tells LaTexX to compile as math
      . I can also give equations their own space: 
